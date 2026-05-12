@@ -2,7 +2,7 @@
 Built a complete automation flow in Zoho CRM for Quote Approval and automatic Work Order creation. The process includes automated email notifications with approval links, customer approval/cancellation actions, automatic Quote Stage updates (Draft → Approved), and instant Work Order creation after approval.
 
 
-``
+
 void automation.CreateWorkOrder(Int idd)
 {
 resp = zoho.crm.getRecordById("Quotes",idd);
@@ -45,4 +45,4 @@ resp2 = zoho.crm.createRecord("Work_Orders",mapp,{"trigger":{"workflow"}});
 info resp2;
 }
 
-``
+
